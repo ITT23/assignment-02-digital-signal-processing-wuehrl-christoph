@@ -136,6 +136,7 @@ def check_last_note(main_frequency):
                 pyglet_up() # triggers pyglet input
             else:
                 KEYBOARD.press(Key.up) # triggers arrow input
+                KEYBOARD.release(Key.up) # triggers arrow input
     elif(main_frequency == last_note):
         return 
     else:
@@ -149,6 +150,7 @@ def check_last_note(main_frequency):
                 pyglet_down() # triggers pyglet input
             else:
                 KEYBOARD.press(Key.down)  # triggers arrow input
+                KEYBOARD.release(Key.down)  # triggers arrow input
     elif(main_frequency == last_note):
         return 
     else:
